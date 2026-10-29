@@ -1,0 +1,133 @@
+/* --- Color Palette ---
+   Primary (Maroon/Crimson): #800000
+   Accent (Warm Gold):      #d4af37
+   Background:              #f9f9f9
+   Text:                    #333333
+------------------------ */
+
+/* 1. Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* 2. Navigation Bar */
+header {
+    background-color: #800000; /* DTU Maroon */
+    padding: 15px 30px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.anchor {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+    transition: color 0.2s ease;
+}
+
+.anchor:hover {
+    color: #d4af37; /* Gold highlight on hover */
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 0;
+}
+
+/* 3. Main Content Section */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero-section {
+    margin-bottom: 30px;
+}
+
+#heading1 {
+    color: #800000;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    color: #555555;
+}
+
+/* 4. Images */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.dtu-logo {
+    width: 200px;              /* Increased size */
+    height: 200px;             /* Keeps it a perfect circle */
+    object-fit: cover;         /* Prevents image distortion */
+    border-radius: 50%;
+    border: 3px solid #800000; /* Optional: subtle maroon ring */
+}
+
+.fest-image {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
+}
+/* --- Footer Styling --- */
+footer {
+    background-color: #800000; /* Same DTU maroon as header */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px; /* Separates footer from the content above */
+}
+
+.tagline {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #d4af37; /* Gold accent color */
+    font-weight: bold;
+}
+
+.copyright {
+    font-size: 13px;
+    color: #e0e0e0;
+}
+/* 2. Figure container for image + caption */
+.fest-figure {
+    width: 100%;
+    max-width: 750px;
+    margin: 0;
+}
+
+/* 3. Image caption styling */
+figcaption {
+    margin-top: 8px;
+    font-size: 15px;
+    font-style: italic;
+    color: #555555;
+    text-align: center;
+}
